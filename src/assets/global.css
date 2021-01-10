@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+form {
+    max-width: 360px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 20px 40px 40px;
+    border-radius: 10px;
+}
+label {
+    color: #2c3e50;
+    display: inline-block;
+    margin: 25px 0 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+input, select {
+    font-size: 1em;
+    background: none;
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+    outline:none;
+}
+.select-block {
+    background: url("arrow_select.png") no-repeat right .1em top 50%, 0 0;
+}
+input:hover, select:hover {
+    border-color: #2c3e50;
+    transition: ease-in-out 0.5s;
+}
+select {
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.term {
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 0;
+    width: 16px;
+    height: 16px;
+    content: "";
+    cursor: pointer;
+}
+.skills {
+    max-width: 420px;
+    margin: 30px auto;
+    background: white;
+    text-align: left;
+    padding: 40px;
+    border-radius: 10px;
+}
+ul {
+    list-style-type: none;
+}
+button {
+    font-size: 1.2em;
+    background: #0b6dff;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 20px;
+    outline:none;
+}
+button:hover {
+    background: #3091f5;
+    transition: ease-in-out 0.2s;
+}
+.skills button:hover {
+    background-color: #6580a7;
+    transition: ease-in-out 0.2s;
+}
+.pill {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+}
+.pill:hover {
+    background-color: lightcoral;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+.submit {
+    text-align: center;
+}
+.error {
+    position: absolute;
+    color: lightcoral;
+    margin-top: -10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+option {
+    border: none;
+}
+.pass-block {
+    /*display: inline-block;*/
+}
+.pass-type {
+    opacity: 0;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 0 0;
+    width: 24px;
+    height: 24px;
+    content: "";
+    cursor: pointer;
+}
+.check {
+    position: absolute;
+    height: 24px;
+    border-radius: 50%;
+    background: url("eye_check.png") no-repeat;
+}
+.uncheck {
+    position: absolute;
+    height: 24px;
+    border-radius: 50%;
+    background: url("eye_uncheck.png") no-repeat;
+}
+
+.checkTerm {
+    position: absolute;
+    height: 16px;
+    background: url("checkbox_checked.png") no-repeat;
+}
+.uncheckTerm {
+    position: absolute;
+    height: 16px;
+    background: url("checkbox_unchecked.png") no-repeat;
+}
+.check:hover, .uncheck:hover, .checkTerm:hover, .uncheckTerm:hover {
+    transition: ease-in-out 0.2s;
+}
+.term-label {
+    display: inline-block;
+    margin: 0 0 0 25px;
+}
+.terms {
+    margin: 25px 0 10px;
+
+}
+.password {
+    width: calc(100% - 24px);
+    display: inline-block;
+}
+.passreq {
+    color: lightcoral;
+    margin-top: -10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+ul {
+    padding-inline-start: 0;
+}
+.pass-done {
+    color: lightseagreen;
+}
