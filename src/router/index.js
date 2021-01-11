@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Jobs from '../views/jobs/Jobs.vue'
+import JobDetails from "@/views/jobs/JobDetails";
+import NotFound from "@/views/NotFound";
 
 const routes = [
   {
@@ -14,6 +17,28 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/jobs',
+    name: 'Jobs',
+    component: Jobs
+  },
+  {
+    path: '/jobs/:id',
+    name: 'JobDetails',
+    component: JobDetails,
+    props: true
+  },
+    // redirect
+  {
+    path: '/all-jobs',
+    redirect: ' /jobs'
+  },
+    // catchall 404
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 
