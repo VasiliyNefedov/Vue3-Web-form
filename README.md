@@ -1,5 +1,7 @@
 # web-form
 
+Небольшая веб-форма регистрации на сайте. Реализована проверка пароля на сложность и правильность заполнения форм.
+
 ## Project setup
 ```
 npm install
@@ -10,10 +12,4 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
